@@ -70,6 +70,12 @@
   background-color: deepskyblue;
 }
 
+.bg {
+  transition: all .5s ease-in-out;
+  /*background-color: #ffa875;*/
+  background-color: #000;
+}
+
 .color1 {
   transition: all .5s ease-in-out;
   /*background-color: #ffa875;*/
