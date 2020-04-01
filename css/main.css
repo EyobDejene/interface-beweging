@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("./Orbitron/static/Orbitron-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-small";
+  src: url("./Orbitron/static/Orbitron-Regular.ttf") format("truetype");
+}
+
+
 #container {
   display: flex;
   flex-direction: column;
@@ -156,5 +166,33 @@
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  font-family: Orbitron;
+  font-size: 1.6rem;
+  cursor:pointer;
 }
 
+
+p{
+  font-family: Orbitron-small;
+  font-size: 0.8rem;
+}
+
+.credits{
+  font-size: 0.5rem;
+}
+
+.start{
+  -webkit-animation: flickerAnimation 2s infinite;
+   animation: flickerAnimation 2s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+
+a{
+  text-decoration: none;
+  color: #fff
+}
